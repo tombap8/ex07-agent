@@ -1,75 +1,89 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;700&display=swap');
 
-/* Default Theme: Dark Mode (Mint-Yellow-Gray-Blue Theme) */
+/* Default Theme: Dark Mode (Orange-Gray Theme) */
 :root {
   --font-main: 'Inter', sans-serif;
   --font-mono: 'JetBrains Mono', monospace;
 
   /* Colors */
-  --bg-gradient: radial-gradient(circle at 50% 50%, #064e3b 0%, #022c22 100%);
-  --calc-bg: rgba(6, 78, 59, 0.45);
-  --calc-border: rgba(148, 163, 184, 0.35);
-  --calc-shadow: 0 25px 50px -12px rgba(2, 44, 34, 0.6);
+  --bg-gradient: radial-gradient(circle at 50% 50%, #431407 0%, #1c1917 100%);
+  --calc-bg: rgba(28, 25, 23, 0.6);
+  --calc-border: rgba(120, 113, 108, 0.45);
+  --calc-shadow: 0 25px 50px -12px rgba(28, 25, 23, 0.8);
   
-  --display-bg: rgba(2, 44, 34, 0.7);
-  --display-text: #93c5fd;
-  --display-formula: #60a5fa;
+  --display-bg: rgba(28, 25, 23, 0.8);
+  --display-text: #ffedd5;
+  --display-formula: #fed7aa;
   
-  --btn-num-bg: #fef08a;
-  --btn-num-hover: #facc15;
-  --btn-num-text: #1e3a8a;
+  --btn-num-bg: linear-gradient(135deg, #f4f4f5 0%, #e4e4e7 100%);
+  --btn-num-hover: linear-gradient(135deg, #e4e4e7 0%, #d4d4d8 100%);
+  --btn-num-text: #18181b;
   
-  --btn-op-bg: #fde047;
-  --btn-op-hover: #facc15;
-  --btn-op-text: #1e3a8a;
+  --btn-op-bg: linear-gradient(135deg, #e4e4e7 0%, #d4d4d8 100%);
+  --btn-op-hover: linear-gradient(135deg, #d4d4d8 0%, #cbd5e1 100%);
+  --btn-op-text: #ea580c;
   
-  --btn-fn-bg: #ca8a04;
-  --btn-fn-hover: #a16207;
-  --btn-fn-text: #ffffff;
+  --btn-fn-bg: linear-gradient(135deg, #d4d4d8 0%, #cbd5e1 100%);
+  --btn-fn-hover: linear-gradient(135deg, #cbd5e1 0%, #94a3b8 100%);
+  --btn-fn-text: #7c2d12;
 
-  --btn-equals-bg: linear-gradient(135deg, #fde047 0%, #eab308 100%);
-  --btn-equals-hover: linear-gradient(135deg, #fef08a 0%, #facc15 100%);
-  --btn-equals-text: #1e3a8a;
+  --btn-equals-bg: linear-gradient(135deg, #f97316 0%, #ea580c 100%);
+  --btn-equals-hover: linear-gradient(135deg, #fb923c 0%, #f97316 100%);
+  --btn-equals-text: #ffffff;
+
+  --btn-utility-bg: rgba(255, 255, 255, 0.1);
+  --btn-utility-hover: rgba(255, 255, 255, 0.18);
+  --btn-utility-text: #ffedd5;
+
+  --kbd-badge-bg: rgba(255, 255, 255, 0.08);
+  --kbd-badge-text: #ffedd5;
   
-  --text-primary: #93c5fd;
-  --text-secondary: #60a5fa;
+  --text-primary: #ffedd5;
+  --text-secondary: #fed7aa;
   --glass-blur: blur(20px);
   
-  --theme-toggle-btn: #fde047;
+  --theme-toggle-btn: #f97316;
 }
 
-/* Light Theme Variables (Mint-Yellow-Gray-Blue Theme) */
+/* Light Theme Variables (Orange-Gray Theme) */
 [data-theme="light"] {
-  --bg-gradient: radial-gradient(circle at 50% 50%, #ecfdf5 0%, #a7f3d0 100%);
-  --calc-bg: rgba(255, 255, 255, 0.65);
-  --calc-border: rgba(100, 116, 139, 0.4);
-  --calc-shadow: 0 25px 50px -12px rgba(6, 78, 59, 0.15);
+  --bg-gradient: radial-gradient(circle at 50% 50%, #ffedd5 0%, #fed7aa 100%);
+  --calc-bg: rgba(255, 255, 255, 0.7);
+  --calc-border: rgba(120, 113, 108, 0.35);
+  --calc-shadow: 0 25px 50px -12px rgba(124, 45, 18, 0.15);
   
-  --display-bg: rgba(255, 255, 255, 0.85);
-  --display-text: #1d4ed8;
-  --display-formula: #2563eb;
+  --display-bg: rgba(255, 255, 255, 0.9);
+  --display-text: #7c2d12;
+  --display-formula: #ea580c;
   
-  --btn-num-bg: #fef08a;
-  --btn-num-hover: #facc15;
-  --btn-num-text: #1e3a8a;
+  --btn-num-bg: linear-gradient(135deg, #ffffff 0%, #f4f4f5 100%);
+  --btn-num-hover: linear-gradient(135deg, #f4f4f5 0%, #e4e4e7 100%);
+  --btn-num-text: #1c1917;
   
-  --btn-op-bg: #fde047;
-  --btn-op-hover: #facc15;
-  --btn-op-text: #1e3a8a;
+  --btn-op-bg: linear-gradient(135deg, #f4f4f5 0%, #e4e4e7 100%);
+  --btn-op-hover: linear-gradient(135deg, #e4e4e7 0%, #d4d4d8 100%);
+  --btn-op-text: #ea580c;
   
-  --btn-fn-bg: #ca8a04;
-  --btn-fn-hover: #a16207;
-  --btn-fn-text: #ffffff;
+  --btn-fn-bg: linear-gradient(135deg, #e4e4e7 0%, #d4d4d8 100%);
+  --btn-fn-hover: linear-gradient(135deg, #d4d4d8 0%, #cbd5e1 100%);
+  --btn-fn-text: #7c2d12;
 
-  --btn-equals-bg: linear-gradient(135deg, #fde047 0%, #eab308 100%);
-  --btn-equals-hover: linear-gradient(135deg, #fef08a 0%, #facc15 100%);
-  --btn-equals-text: #1e3a8a;
+  --btn-equals-bg: linear-gradient(135deg, #f97316 0%, #ea580c 100%);
+  --btn-equals-hover: linear-gradient(135deg, #fb923c 0%, #f97316 100%);
+  --btn-equals-text: #ffffff;
+
+  --btn-utility-bg: rgba(28, 25, 23, 0.06);
+  --btn-utility-hover: rgba(28, 25, 23, 0.12);
+  --btn-utility-text: #7c2d12;
+
+  --kbd-badge-bg: rgba(28, 25, 23, 0.06);
+  --kbd-badge-text: #7c2d12;
   
-  --text-primary: #1d4ed8;
-  --text-secondary: #2563eb;
+  --text-primary: #7c2d12;
+  --text-secondary: #ea580c;
   --glass-blur: blur(16px);
   
-  --theme-toggle-btn: #ca8a04;
+  --theme-toggle-btn: #ea580c;
 }
 
 * {
@@ -111,7 +125,7 @@ body {
 .orb-1 {
   width: 400px;
   height: 400px;
-  background: #34d399;
+  background: #ea580c;
   top: 10%;
   left: 15%;
 }
@@ -119,7 +133,7 @@ body {
 .orb-2 {
   width: 350px;
   height: 350px;
-  background: #facc15;
+  background: #eab308;
   bottom: 15%;
   right: 15%;
 }
@@ -152,9 +166,9 @@ header {
 }
 
 .header-btn {
-  background: var(--btn-num-bg);
+  background: var(--btn-utility-bg);
   border: 1px solid var(--calc-border);
-  color: var(--text-primary);
+  color: var(--btn-utility-text);
   width: 40px;
   height: 40px;
   border-radius: 12px;
@@ -167,7 +181,7 @@ header {
 }
 
 .header-btn:hover {
-  background: var(--btn-num-hover);
+  background: var(--btn-utility-hover);
   transform: translateY(-2px);
 }
 
@@ -444,7 +458,8 @@ header {
 }
 
 .kbd-badge {
-  background: var(--btn-num-bg);
+  background: var(--kbd-badge-bg);
+  color: var(--kbd-badge-text);
   border: 1px solid var(--calc-border);
   padding: 2px 6px;
   border-radius: 4px;

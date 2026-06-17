@@ -22,8 +22,15 @@ ex07-agent/
 │   └── styles.css      # 디자인 시스템 변수, 테마 설정, 글래스모피즘 효과 및 애니메이션
 ├── js/
 │   └── app.js          # 계산 엔진 로직, 히스토리 관리, 키보드 이벤트 핸들러
+├── kbs.md              # [디자인 지침서] 오렌지/그레이 테마 등 UI 설계 원칙
+├── dev.md              # [개발 규격서] 코드 스타일, 보안 패턴, LocalStorage 스키마
+├── description.md      # [프로세스 가이드] 에이전트 구동 아키텍처 및 협업 워크플로우
 └── readme.md           # 프로젝트 전체 설명 및 매뉴얼 문서 (현재 파일)
 ```
+
+> [!IMPORTANT]
+> **신규 기능 개발 및 변경 지침:**
+> 이 프로젝트에서 새로운 기능을 추가하거나 기존 코드를 수정할 때에는 반드시 디자인 지시서인 [kbs.md](file:///c:/Users/tomba/OneDrive/문서/GitHub/ex07-agent/kbs.md)와 개발 구현 규격서인 [dev.md](file:///c:/Users/tomba/OneDrive/문서/GitHub/ex07-agent/dev.md)를 상호 대조하고 참조하여 가이드라인을 철저히 준수해야 합니다. 이에 대한 상세 메커니즘은 [description.md](file:///c:/Users/tomba/OneDrive/문서/GitHub/ex07-agent/description.md)에서 확인하실 수 있습니다.
 
 ### 각 파일의 상세 역할
 1. **[index.html](file:///c:/Users/tomba/OneDrive/문서/GitHub/ex07-agent/index.html)**:
@@ -36,6 +43,12 @@ ex07-agent/
    - 숫자 입력 시 점(`.`)이 여러 개 들어가는 것과 같은 유효성 에러를 사전 방지합니다.
    - 수식 파싱은 지정된 안전한 산술 문자열만 연산하도록 정규식 검사를 통해 안전하게 구동됩니다.
    - 계산 성공 시 히스토리 패널로 기록이 추가되며, 히스토리 항목을 클릭하여 이전 연산 결과를 계산기로 복원할 수 있습니다.
+4. **[kbs.md](file:///c:/Users/tomba/OneDrive/문서/GitHub/ex07-agent/kbs.md)**:
+   - 10년차 웹 디자이너가 작성한 UI/UX 사양서로, 테마 컬러(오렌지 그라데이션), 키패드 버튼 그라데이션, 시인성을 높이기 위한 유틸리티 버튼의 명도 대비 지침 등을 수록하고 있습니다.
+5. **[dev.md](file:///c:/Users/tomba/OneDrive/문서/GitHub/ex07-agent/dev.md)**:
+   - 10년차 시니어 프론트엔드 개발자가 선언한 아키텍처 및 품질 기준서로, 바닐라 스택 고수, 안전한 수식 산출을 위한 인젝션 보안 가이드, 예외 처리 설계, LocalStorage 스키마 규격을 통제합니다.
+6. **[description.md](file:///c:/Users/tomba/OneDrive/문서/GitHub/ex07-agent/description.md)**:
+   - 프로젝트에서 AI 에이전트와 협업하는 구체적인 원리(컨텍스트 앵커링)와 각 파일들의 참조 워크플로우를 도해와 함께 정리한 설명 문서입니다.
 
 ---
 
