@@ -1,75 +1,75 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;700&display=swap');
 
-/* Default Theme: Dark Mode */
+/* Default Theme: Dark Mode (Mint-Yellow-Gray-Blue Theme) */
 :root {
   --font-main: 'Inter', sans-serif;
   --font-mono: 'JetBrains Mono', monospace;
 
   /* Colors */
-  --bg-gradient: radial-gradient(circle at 50% 50%, #1e1b4b 0%, #0f172a 100%);
-  --calc-bg: rgba(30, 41, 59, 0.45);
-  --calc-border: rgba(255, 255, 255, 0.08);
-  --calc-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+  --bg-gradient: radial-gradient(circle at 50% 50%, #064e3b 0%, #022c22 100%);
+  --calc-bg: rgba(6, 78, 59, 0.45);
+  --calc-border: rgba(148, 163, 184, 0.35);
+  --calc-shadow: 0 25px 50px -12px rgba(2, 44, 34, 0.6);
   
-  --display-bg: rgba(15, 23, 42, 0.6);
-  --display-text: #f8fafc;
-  --display-formula: #94a3b8;
+  --display-bg: rgba(2, 44, 34, 0.7);
+  --display-text: #93c5fd;
+  --display-formula: #60a5fa;
   
-  --btn-num-bg: rgba(255, 255, 255, 0.04);
-  --btn-num-hover: rgba(255, 255, 255, 0.09);
-  --btn-num-text: #f1f5f9;
+  --btn-num-bg: #fef08a;
+  --btn-num-hover: #facc15;
+  --btn-num-text: #1e3a8a;
   
-  --btn-op-bg: rgba(249, 115, 22, 0.2);
-  --btn-op-hover: rgba(249, 115, 22, 0.35);
-  --btn-op-text: #fdba74;
+  --btn-op-bg: #fde047;
+  --btn-op-hover: #facc15;
+  --btn-op-text: #1e3a8a;
   
-  --btn-fn-bg: rgba(239, 68, 68, 0.15);
-  --btn-fn-hover: rgba(239, 68, 68, 0.28);
-  --btn-fn-text: #fca5a5;
+  --btn-fn-bg: #ca8a04;
+  --btn-fn-hover: #a16207;
+  --btn-fn-text: #ffffff;
 
-  --btn-equals-bg: linear-gradient(135deg, #f97316 0%, #ea580c 100%);
-  --btn-equals-hover: linear-gradient(135deg, #fb923c 0%, #f97316 100%);
-  --btn-equals-text: #ffffff;
+  --btn-equals-bg: linear-gradient(135deg, #fde047 0%, #eab308 100%);
+  --btn-equals-hover: linear-gradient(135deg, #fef08a 0%, #facc15 100%);
+  --btn-equals-text: #1e3a8a;
   
-  --text-primary: #f8fafc;
-  --text-secondary: #94a3b8;
+  --text-primary: #93c5fd;
+  --text-secondary: #60a5fa;
   --glass-blur: blur(20px);
   
-  --theme-toggle-btn: #f59e0b;
+  --theme-toggle-btn: #fde047;
 }
 
-/* Light Theme Variables */
+/* Light Theme Variables (Mint-Yellow-Gray-Blue Theme) */
 [data-theme="light"] {
-  --bg-gradient: radial-gradient(circle at 50% 50%, #f1f5f9 0%, #cbd5e1 100%);
-  --calc-bg: rgba(255, 255, 255, 0.6);
-  --calc-border: rgba(15, 23, 42, 0.08);
-  --calc-shadow: 0 25px 50px -12px rgba(15, 23, 42, 0.15);
+  --bg-gradient: radial-gradient(circle at 50% 50%, #ecfdf5 0%, #a7f3d0 100%);
+  --calc-bg: rgba(255, 255, 255, 0.65);
+  --calc-border: rgba(100, 116, 139, 0.4);
+  --calc-shadow: 0 25px 50px -12px rgba(6, 78, 59, 0.15);
   
-  --display-bg: rgba(255, 255, 255, 0.8);
-  --display-text: #0f172a;
-  --display-formula: #64748b;
+  --display-bg: rgba(255, 255, 255, 0.85);
+  --display-text: #1d4ed8;
+  --display-formula: #2563eb;
   
-  --btn-num-bg: rgba(15, 23, 42, 0.04);
-  --btn-num-hover: rgba(15, 23, 42, 0.08);
-  --btn-num-text: #1e293b;
+  --btn-num-bg: #fef08a;
+  --btn-num-hover: #facc15;
+  --btn-num-text: #1e3a8a;
   
-  --btn-op-bg: rgba(249, 115, 22, 0.12);
-  --btn-op-hover: rgba(249, 115, 22, 0.22);
-  --btn-op-text: #d97706;
+  --btn-op-bg: #fde047;
+  --btn-op-hover: #facc15;
+  --btn-op-text: #1e3a8a;
   
-  --btn-fn-bg: rgba(239, 68, 68, 0.1);
-  --btn-fn-hover: rgba(239, 68, 68, 0.2);
-  --btn-fn-text: #dc2626;
+  --btn-fn-bg: #ca8a04;
+  --btn-fn-hover: #a16207;
+  --btn-fn-text: #ffffff;
 
-  --btn-equals-bg: linear-gradient(135deg, #f97316 0%, #ea580c 100%);
-  --btn-equals-hover: linear-gradient(135deg, #fb923c 0%, #f97316 100%);
-  --btn-equals-text: #ffffff;
+  --btn-equals-bg: linear-gradient(135deg, #fde047 0%, #eab308 100%);
+  --btn-equals-hover: linear-gradient(135deg, #fef08a 0%, #facc15 100%);
+  --btn-equals-text: #1e3a8a;
   
-  --text-primary: #0f172a;
-  --text-secondary: #64748b;
+  --text-primary: #1d4ed8;
+  --text-secondary: #2563eb;
   --glass-blur: blur(16px);
   
-  --theme-toggle-btn: #4f46e5;
+  --theme-toggle-btn: #ca8a04;
 }
 
 * {
@@ -111,7 +111,7 @@ body {
 .orb-1 {
   width: 400px;
   height: 400px;
-  background: #6366f1;
+  background: #34d399;
   top: 10%;
   left: 15%;
 }
@@ -119,7 +119,7 @@ body {
 .orb-2 {
   width: 350px;
   height: 350px;
-  background: #ec4899;
+  background: #facc15;
   bottom: 15%;
   right: 15%;
 }
